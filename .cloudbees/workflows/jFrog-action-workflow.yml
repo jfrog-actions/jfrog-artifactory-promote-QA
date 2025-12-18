@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: checkout-source-code
         uses: cloudbees-io/checkout@v1
-      - name: jfrog-promote-actions
+      - name: jfrog-action-workflow-promote-file
         uses: cloudbees-io/jfrog-artifactory-promote-image@v1
         with:
           url: ${{ vars.JFROG_URL }}
